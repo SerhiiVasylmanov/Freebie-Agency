@@ -450,7 +450,7 @@ body {
   line-height: 25px;
   letter-spacing: 1.008px;
   color: #777777;
-  margin: 35px 0 20px;
+  margin: 35px auto 20px;
 }
 
 .content-branding_link,
@@ -1086,11 +1086,19 @@ body {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1019px) {
   .container {
     width: 720px;
   }
+  .header-info {
+    text-align: center;
+    margin: 15vh 0 0;
+  }
 
+  .header-info_title {
+    font-size: 5vh;
+    margin-bottom: 5vh;
+  }
   .first-section_ima {
     top: -25px;
   }
@@ -1099,7 +1107,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .container {
     width: 540px;
   }
@@ -1159,8 +1167,86 @@ body {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   .container {
     width: 90%;
+    padding: 0 10px;
+  }
+  .header-info {
+    margin: 15vh 0 0;
+  }
+  .header-info_title {
+    letter-spacing: normal;
+    margin-bottom: 5vh;
+  }
+  .first-section_image {
+    align-items: center;
+  }
+  .first-section_image img {
+    width: 90%;
+  }
+  .first-section-info {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .categories ul {
+    gap: 20px;
+  }
+  .categories ul li {
+    margin: 0;
+  }
+  .content-info_title {
+    font-size: 5vh;
+  }
+  .content-info_title::after,
+  .content-info_title::before {
+    display: none;
+  }
+  .services {
+    padding: 0;
+  }
+  .services_info-content {
+    text-align: center;
+  }
+  .content-branding_title::after,
+  .content-design_title::after,
+  .content-development_title::after {
+    right: 0;
+    margin: auto;
+  }
+  .content-branding,
+  .content-design,
+  .content-development {
+    padding-top: 100px;
+    background-position: 50% 42px;
+  }
+  .content-branding::after,
+  .content-design::after,
+  .content-development::after {
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .content-info {
+    text-align: center;
+  }
+  .content-info img {
+    width: 90%;
+  }
+  .second .content-info_title,
+  .first .content-info_title,
+  .forth .content-info_title,
+  .third .content-info_title {
+    top: 15%;
+    left: 5%;
+    max-width: 90%;
+  }
+  .team-person li img {
+    width: 100%;
+  }
+
+  .slider::after {
+    width: 100%;
   }
 }
